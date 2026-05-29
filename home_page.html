@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>Tours and Travel</title>
+    <link rel="stylesheet" href="home_style.css">
+    <link rel="icon" href="tat_logo.png">
+    <link rel="stylesheet" href="home_style2.css">
+  </head>
+
+  <body>
+    <nav>
+      <a href="#"><img src="tat_logo.png" class="Logo"/></a>
+      <ul class="navlinks">
+        <a class="link" href="#c2">Home</a>
+        <li class="link dropdown">
+          Profile
+          <div class="dropdown-content">
+            <p>Content related to profile goes here...</p>
+          </div>
+        </li>
+        <a class="link" href="#package">Offers</a>
+        <a class="link" href="#c1">Services</li>
+        <a class="link" href="#fooot">Contacts</a>
+      </ul>
+    </nav>
+    
+    <header>
+      <div class="sectioncontainer" id="c2">
+        <div class="headercontent">
+          <h1>Travel</h1>
+          <p>
+            "Discover the world from the comfort of home with our captivating tours and travels. Let your imagination soar as you embark on virtual adventures. Your gateway to endless exploration begins here. Wanderlust awaits, and the journey starts at home. 🌍✈️ #ArmchairExplorer #VirtualWanderlust"
+          </p>
+          <button>Explore</button>
+        </div>
+      </div>
+    </header>
+
+    <section class="tour-search">
+      <div class="container">
+        <form action="" class="tour-search-form">
+          <div class="input-wrapper">
+            <label for="destination" class="input-label">Search Destination*</label>
+            <input type="text" name="destination" id="destination" required placeholder="Enter Destination"
+              class="input-field">
+          </div>
+          <div class="input-wrapper">
+            <label for="people" class="input-label">Pax Number*</label>
+            <input type="number" name="people" id="people" required placeholder="No.of People" class="input-field">
+          </div>
+          <div class="input-wrapper">
+            <label for="checkin" class="input-label">Checkin Date**</label>
+            <input type="date" name="checkin" id="checkin" required class="input-field">
+          </div>
+          <div class="input-wrapper">
+            <label for="checkout" class="input-label">Checkout Date*</label>
+            <input type="date" name="checkout" id="checkout" required class="input-field">
+          </div>
+          <button type="submit" class="btn btn-secondary">Inquire now</button>
+        </form>
+      </div>
+    </section>
+
+
+    <section class="journeycontainer">
+      <div class="sectioncontainer"  id="c3">
+        <h2 class="sectiontitle">Embark on Your Adventure</h2>
+        <p class="sectionsubtitle">Top Destinations in India Frequently Searched for</p>
+        <div class="journeygrid">
+          <div class="countrycard" class="weather-forecast" id="weather-forecast">
+            <img src="tajaaaaa.jpeg" alt="country" />
+            <div class="countryname">
+              <i class="ri-map-pin-2-fill"></i>
+              <span>Taj Mahal, India</span>
+            </div>
+            <div class="container" id="weather-taj-mahal" style="display: none;">
+              <h2 class="section-title">Weather Forecast</h2>
+              <div class="weather-info" id="weather-info-taj-mahal">
+                <!-- Weather forecast content will be inserted here -->
+              </div>
+            </div>
+            <button id="toggle-weather-taj-mahal">Show Weather Forecast for Taj Mahal</button>
+          </div>
+          <div class="countrycard">
+            <img src="goa2.jpg" alt="country" class="im"/>
+            <div class="countryname">
+              <i class="ri-map-pin-2-fill"></i>
+              <span>Goa,India</span>
+            </div>
+            <div class="container">
+              <h2 class="section-title">Weather Forecast</h2>
+              <div class="weather-info1" id="weather-info1">
+
+              </div>
+            </div>
+
+          </div>
+          <div class="countrycard">
+            <img src="lak2.avif" alt="country" />
+            <div class="countryname">
+              <i class="ri-map-pin-2-fill"></i>
+              <span>Lakshadweep, India</span>
+            </div>
+            <div class="container">
+              <h2 class="section-title">Weather Forecast</h2>
+              <div class="weather-info2" id="weather-info2">
+
+              </div>
+            </div>
+
+          </div>
+          <div class="countrycard">
+            <img src="mun.jpg" alt="country" />
+            <div class="countryname">
+              <i class="ri-map-pin-2-fill"></i>
+              <span>Munnar, India</span>
+            </div>
+            <div class="container">
+              <h2 class="section-title">Weather Forecast</h2>
+              <div class="weather-info5" id="weather-info5">
+
+              </div>
+            </div>
+          </div>
+          <div class="countrycard">
+            <img src="mysoreeeeeeeeeeeee.jpeg" alt="country" />
+            <div class="countryname">
+              <i class="ri-map-pin-2-fill"></i>
+              <span>Mysore,India</span>
+            </div>
+            <div class="container">
+              <h2 class="section-title">Weather Forecast</h2>
+              <div class="weather-info3" id="weather-info3">
+
+              </div>
+            </div>
+          </div>
+          <div class="countrycard">
+            <img src="himaaa.jpg" alt="country" />
+            <div class="countryname">
+              <i class="ri-map-pin-2-fill"></i>
+              <span>Himalayas, India</span>
+            </div>
+            <div class="container">
+              <h2 class="section-title">Weather Forecast</h2>
+              <div class="weather-info4" id="weather-info4">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="package" id="package">
+      <div class="container">
+        <p class="section-subtitle">Popular Packeges</p>
+        <h2 class="h2 section-title">Checkout Our Packeges</h2>
+        <p class="section-text">Exploring the world, one adventure at a time.</p>
+        <ul class="package-list">
+          <li>
+            <div class="package-card">
+              <figure class="card-banner">
+                <img src="./goa_pak.jpg" alt="Experience The Great Holiday On Beach" loading="lazy">
+              </figure>
+              <div class="card-content">
+                <h3 class="h3 card-title">Experience The Great Holiday On Beach</h3>
+                <p class="card-text">
+                  Embark on a journey to unearth the charm of Goa, where golden beaches, rich culture, and endless 
+                  adventures await in this tropical haven of beauty and bliss.
+                </p>
+                <ul class="card-meta-list">
+                  <li class="card-meta-item">
+                    <div class="meta-box">
+                      <ion-icon name="time"></ion-icon>
+                      <p class="text">3D/2N</p>
+                    </div>
+                  </li>
+                  <li class="card-meta-item">
+                    <div class="meta-box">
+                      <ion-icon name="people"></ion-icon>
+                      <p class="text">pax: 10</p>
+                    </div>
+                  </li>
+                  <li class="card-meta-item">
+                    <div class="meta-box">
+                      <ion-icon name="location"></ion-icon>
+                      <p class="text">Goa</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-price">
+                <div class="wrapper">
+                  <p class="reviews">(25 reviews)</p>
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+                <p class="price">₹24999<span>/ per person</span></p>
+                <button class="btn btn-secondary">Book Now</button>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="package-card">
+              <figure class="card-banner">
+                <img src="./munnar_pak.jpg" alt="Summer Holiday To The Munnar" loading="lazy">
+              </figure>
+              <div class="card-content">
+                <h3 class="h3 card-title">Summer Holiday To The Munnar</h3>
+                <p class="card-text">
+                  Embark on a journey to unearth the serene beauty hidden among the misty mountains and lush greenery of breathtaking Munnar,
+                   a true haven for travelers seeking tranquility and adventure.
+                </p>
+                <ul class="card-meta-list">
+                  <li class="card-meta-item">
+                    <div class="meta-box">
+                      <ion-icon name="time"></ion-icon>
+                      <p class="text">5D/4N</p>
+                    </div>
+                  </li>
+                  <li class="card-meta-item">
+                    <div class="meta-box">
+                      <ion-icon name="people"></ion-icon>
+                      <p class="text">pax: 10</p>
+                    </div>
+                  </li>
+                  <li class="card-meta-item">
+                    <div class="meta-box">
+                      <ion-icon name="location"></ion-icon>
+                      <p class="text">Kerala</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-price">
+                <div class="wrapper">
+                  <p class="reviews">(20 reviews)</p>
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+                <p class="price">₹8999<span>/ per person</span></p>
+                <button class="btn btn-secondary">Book Now</button>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="package-card">
+              <figure class="card-banner">
+                <img src="./tajmahal_pak.jpg" alt="Weekend Vacation to Taj Mahal" loading="lazy">
+              </figure>
+              <div class="card-content">
+                <h3 class="h3 card-title">Weekend Vacation to Taj Mahal</h3>
+                <p class="card-text">
+                  Immersed in the ethereal splendor of the Taj Mahal, where every marble curve tells 
+                  a story of enduring love, echoing through the corridors of history.
+                </p>
+                <ul class="card-meta-list">
+                  <li class="card-meta-item">
+                    <div class="meta-box">
+                      <ion-icon name="time"></ion-icon>
+                      <p class="text">2D/1N</p>
+                    </div>
+                  </li>
+                  <li class="card-meta-item">
+                    <div class="meta-box">
+                      <ion-icon name="people"></ion-icon>
+                      <p class="text">pax: 10</p>
+                    </div>
+                  </li>
+                  <li class="card-meta-item">
+                    <div class="meta-box">
+                      <ion-icon name="location"></ion-icon>
+                      <p class="text">Uttar Pradesh</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-price">
+                <div class="wrapper">
+                  <p class="reviews">(40 reviews)</p>
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+                <p class="price">₹14999 <span>/ per person</span></p>
+                <button class="btn btn-secondary">Book Now</button>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <button class="btn avi">View All Packages</button>
+      </div>
+    </section>
+
+      <section class="gallery" id="gallery">
+        <div class="container">
+          <p class="section-subtitle">Photo Gallery</p>
+          <h2 class="h2 section-title">Photo's From Travellers</h2>
+          <p class="section-text">
+            Embarking on adventures, each frame tells a story of exploration and discovery, 
+            weaving together moments of wonder from the lens of fellow travelers around the globe.
+          </p>
+          <ul class="gallery-list">
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./peoples1.jpg" alt="Gallery image">
+              </figure>
+            </li>
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./peoples2.jpg" alt="Gallery image">
+              </figure>
+            </li>
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./peoples3.jpg" alt="Gallery image">
+              </figure>
+            </li>
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./peoples4.jpg" alt="Gallery image">
+              </figure>
+            </li>
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./peoples5.jpg" alt="Gallery image">
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="journeycontainer" id="c1">
+        <div class="sectioncontainer">
+          <h2 class="sectiontitle">Services</h2>
+          <p class="sectionsubtitle">Elevating Your Experience with unmatched Services</p>
+          <div class="cardarrange">
+            <div class="cardsize">
+              <img src="./h_logo.png" alt="Services" class="photo10"/>
+              <div class="countryname">
+                <i class="ri-map-pin-2-fill"></i>
+                <span>Affordable Hotel</span>
+              </div>
+            </div>
+            <div class="cardsize">
+              <img src="./food_logo.png" alt="Services" class="photo10"/>
+              <div class="countryname">
+                <i class="ri-map-pin-2-fill"></i>
+                <span>Foods & Drinks</span>
+              </div>
+            </div>
+            <div class="cardsize">
+              <img src="./fast_logo.png" alt="Services" class="photo10"/>
+              <div class="countryname">
+                <i class="ri-map-pin-2-fill"></i>
+                <span>Fastest Travel</span>
+              </div>
+            </div>
+            <div class="cardsize">
+              <img src="./s_logo.png" alt="Services" class="photo10"/>
+              <div class="countryname">
+                <i class="ri-map-pin-2-fill"></i>
+                <span>Safty Guide</span>
+              </div>
+            </div>
+            <div class="cardsize">
+              <img src="./a_logo.png" alt="Services" class="photo10"/>
+              <div class="countryname">
+                <i class="ri-map-pin-2-fill"></i>
+                <span>Around the world</span>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer" id="fooot">
+        <div class="footer-top">
+          <div class="container">
+            <div class="footer-brand">
+              <a href="#" class="logo">
+                <img src="./tat_logo.png" alt="Tours And Travel logo">
+              </a>
+              <p class="footer-text">
+                Join us for unforgettable adventures across the globe. Explore breathtaking landscapes,
+                 immerse in diverse cultures, and create memories that last a lifetime. Your journey begins here!
+              </p>
+            </div>
+            <div class="footer-contact">
+              <h4 class="contact-title">Contact Us</h4>
+              <p class="contact-text">Feel free to contact and reach us !!</p>
+              <ul>
+                <li class="contact-item">
+                  <ion-icon name="call-outline"></ion-icon>
+                  <a href="tel:+01123456790" class="contact-link">+91 9876543210</a>
+                </li>
+                <li class="contact-item">
+                  <ion-icon name="mail-outline"></ion-icon>
+                  <a href="mailto:info.tourly.com" class="contact-link">www.ToursAndTravel.com</a>
+                </li>
+                <li class="contact-item">
+                  <ion-icon name="location-outline"></ion-icon>
+                  <address>515001 Vijayawada, India</address>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-form">
+              <p class="form-text">Subscribe our newsletter for more update & news !!</p>
+              <form action="" class="form-wrapper">
+                <input type="email" name="email" class="input-field" placeholder="Enter Your Email" required>
+                <button type="submit" class="btn btn-secondary">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="container">
+            <p class="copyright">
+              &copy; 2024 <a href="">Avinash</a>. All rights reserved
+            </p>
+            <ul class="footer-bottom-list">
+              <li>
+                <a href="#" class="footer-bottom-link">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#" class="footer-bottom-link">Term & Condition</a>
+              </li>
+              <li>
+                <a href="#" class="footer-bottom-link">FAQ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+  </body>
+</html>
+
+
+
+
+
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+<script src='https://unpkg.com/splitting/dist/splitting.min.js'></script>
+<script>Splitting();
+
+  setTimeout(() => {
+    document.querySelector(".card").focus();
+  },1500);</script>
+
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+</script>
+
+
+<script>
+  function fetchWeatherDataForTajMahal() {
+    const apiKey = '39925d17cbeff2585b4e4909beec68be';
+    const city = 'Agra';
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    fetch(apiUrl)
+      .then(response => response.json())
+      .then(data => {
+        const weatherInfo = document.getElementById('weather-info-taj-mahal');
+        const temperature = data.main.temp;
+        const description = data.weather[0].description;
+        weatherInfo.innerHTML = `
+          <p>Current Temperature: ${temperature}°C</p> 
+          <p>Description: ${description}</p>
+        `;
+      })
+      .catch(error => {
+        console.error('Error fetching weather data:', error);
+      });
+  }
+
+  function toggleWeatherForTajMahal() {
+    const weatherContainer = document.getElementById('weather-taj-mahal');
+    if (weatherContainer.style.display === 'none') {
+      weatherContainer.style.display = 'block';
+      fetchWeatherDataForTajMahal(); 
+    } else {
+      weatherContainer.style.display = 'none';
+    }
+  }
+
+  const toggleButton = document.getElementById('toggle-weather-taj-mahal');
+  toggleButton.addEventListener('click', toggleWeatherForTajMahal);
+</script>
+
+
+<script>
+  function fetchWeatherData() {
+    const apiKey = '39925d17cbeff2585b4e4909beec68be';
+    const city = 'Goa';
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    fetch(apiUrl)
+      .then(response => response.json())
+      .then(data => {
+        const weatherInfo = document.getElementById('weather-info1');
+        const temperature = data.main.temp;
+        const description = data.weather[0].description;
+        const icon = data.weather[0].icon;
+        weatherInfo.innerHTML = `
+          <p>Current Temperature: ${temperature}°C</p>
+          <p>Description: ${description}</p>
+        `;
+      })
+      .catch(error => {
+        console.error('Error fetching weather data:', error);
+      });
+  }
+  window.addEventListener('load', fetchWeatherData);
+</script>
+
+
+<script>
+  function fetchWeatherData() {
+    const apiKey = '39925d17cbeff2585b4e4909beec68be';
+    const city = 'Munnar';
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    fetch(apiUrl)
+      .then(response => response.json())
+      .then(data => {
+        const weatherInfo = document.getElementById('weather-info2');
+        const temperature = data.main.temp;
+        const description = data.weather[0].description;
+        const icon = data.weather[0].icon;
+        weatherInfo.innerHTML = `
+          <p>Current Temperature: ${temperature}°C</p>
+          <p>Description: ${description}</p>
+        `;
+      })
+      .catch(error => {
+        console.error('Error fetching weather data:', error);
+      });
+  }
+  window.addEventListener('load', fetchWeatherData);
+</script>
+
+<script>
+  function fetchWeatherData() {
+    const apiKey = '39925d17cbeff2585b4e4909beec68be';
+    const city = 'Mysore';
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    fetch(apiUrl)
+      .then(response => response.json())
+      .then(data => {
+        const weatherInfo = document.getElementById('weather-info3');
+        const temperature = data.main.temp;
+        const description = data.weather[0].description;
+        const icon = data.weather[0].icon;
+        weatherInfo.innerHTML = `
+          <p>Current Temperature: ${temperature}°C</p>
+          <p>Description: ${description}</p>
+        `;
+      })
+      .catch(error => {
+        console.error('Error fetching weather data:', error);
+      });
+  }
+  window.addEventListener('load', fetchWeatherData);
+</script>
+
+
+
+<script>
+  function fetchWeatherData() {
+    const apiKey = '39925d17cbeff2585b4e4909beec68be';
+    const city = 'Tawang';
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    fetch(apiUrl)
+      .then(response => response.json())
+      .then(data => {
+        const weatherInfo = document.getElementById('weather-info4');
+        const temperature = data.main.temp;
+        const description = data.weather[0].description;
+        const icon = data.weather[0].icon;
+        weatherInfo.innerHTML = `
+          <p>Current Temperature: ${temperature}°C</p>
+          <p>Description: ${description}</p>
+        `;
+      })
+      .catch(error => {
+        console.error('Error fetching weather data:', error);
+      });
+  }
+  window.addEventListener('load', fetchWeatherData);
+</script>
+
+<script>
+  function fetchWeatherData() {
+    const apiKey = '39925d17cbeff2585b4e4909beec68be';
+    const city = 'Munnar';
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    fetch(apiUrl)
+      .then(response => response.json())
+      .then(data => {
+        const weatherInfo = document.getElementById('weather-info5');
+        const temperature = data.main.temp;
+        const description = data.weather[0].description;
+        const icon = data.weather[0].icon;
+        weatherInfo.innerHTML = `
+          <p>Current Temperature: ${temperature}°C</p>
+          <p>Description: ${description}</p>
+        `;
+      })
+      .catch(error => {
+        console.error('Error fetching weather data:', error);
+      });
+  }
+  window.addEventListener('load', fetchWeatherData);
+</script>
+
+
+  </body>
+</html>

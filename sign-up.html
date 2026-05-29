@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="icon" href="tat_logo.png">
+</head>
+<body>
+    <header class="header">
+        <a href="#"><img src="tat_logo.png" class="Logo"/></a>
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Explore</a>
+            <a href="#">Package</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <div class="wrapper">
+        <form action="home_page.html" onsubmit="return fun_sign()">
+            <h1>Sign-up</h1>
+            <div class="input-box">
+                <input type="text" placeholder="First and last name" id="name_f" required>
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="Mobile number or E-mail" id="num_mail" required>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Create password" id="pass" required>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Confirm password" id="cpass" required>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox">Show password</label>       
+            </div>
+            <button type="submit" class="btn">Continue</button>
+            <div class="sign-up-link">
+                <p>By creating an account, you agree to 
+                <a href="#" class="col">Terms of Use</a> and license agreements which can be found on our Website.</p>
+                </p>
+            </div>
+        </form>
+    </div>
+
+
+    <script>
+        function fun_sign(){
+            let n1=document.getElementById("name_f").value;
+            let num1=document.getElementById("num_mail").value;
+            let pass1=document.getElementById("pass").value;
+            let cpass=document.getElementById("cpass").value;
+
+            let n2=/^[a-zA-Z\s]+$/;
+            let num2=/^([6-9])([0-9]{9})$/;
+            let email1=/^([a-z0-9\.]+)@([a-z0-9]+)([\.a-z]{2,8})$/;
+            let capitalLet= /[A-Z]/;
+            let smallLet = /[a-z]/;
+            let speciallet = /[!@#$%^&*()_+{}\[\]:;<>,.?~\\/-]/;
+            if(n2.test(n1) && (num2.test(num1)||email1.test(num1)) &&
+               (capitalLet.test(pass1) && smallLet.test(pass1) && speciallet.test(pass1) && 
+               (pass1.match(/[^A-Za-z0-9]/g) || []).length >= 2 && pass1.length>9) && pass1.search(cpass)==0){
+                alert("correct");
+                return true;
+            }
+            else{
+                alert("incorrect name");
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>
