@@ -316,9 +316,9 @@ npm start
 
 ## 👨‍💻 Author
 
-**Avinash Reddy**
+**Nithin Karthik**
 
-- GitHub: [@avinashreddy1235](https://github.com/avinashreddy1235)
+- GitHub: [@nitkart21](https://github.com/nitkart21)
 
 ---
 
